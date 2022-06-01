@@ -90,20 +90,19 @@ public class start_spin : MonoBehaviour
             timer += Time.deltaTime;
             yield return 0;
         }
-        //wheel.SetActive(false);
-        StartCoroutine(Wait(startAngle, finalAngle));
+        transform.eulerAngles = new Vector3(0.0f, 0.0f, finalAngle + startAngle);
+        StartCoroutine(Wait());
         
         //wheel.SetActive(true);
         Debug.Log("Prize: " + prize[randomPrize - 1]);
     }
 
-    IEnumerator Wait(float startAngle, float finalAngle)
+    IEnumerator Wait()
     {
         yield return new WaitForSeconds(0.6f);
         prizeResult.SetActive(true);
         spriteHolder.GetComponent<Image>().sprite = resultPrize[randomPrize - 1];
-        spinButton.SetActive(false);
-        transform.eulerAngles = new Vector3(0.0f, 0.0f, finalAngle + startAngle);
+        spinButton.SetActive(false);    
         ifSpin = false;
     }
 }

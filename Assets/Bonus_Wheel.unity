@@ -1959,22 +1959,22 @@ MonoBehaviour:
   - serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: -0.0692482
-      value: -0.030731201
-      inSlope: 2.6525562
-      outSlope: 2.6525562
+      time: 0
+      value: 0
+      inSlope: 3.0898685
+      outSlope: 3.0898685
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
-      outWeight: 0.02747909
+      outWeight: 0.0324713
     - serializedVersion: 3
-      time: 0.9349957
-      value: 0.7515946
-      inSlope: 0.04116041
-      outSlope: 0.04116041
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.05847256
+      inWeight: 0
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
